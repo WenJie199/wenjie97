@@ -37,7 +37,6 @@ jobs:
     # 使用shell命令批量同步所需的镜像到阿里云个人仓库中
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/elasticsearch:8.15.2 docker://crpi-7u6rj2d0v1pd7q1t.cn-guangzhou.personal.cr.aliyuncs.com/wenjie97/elasticsearch:latest
-         skopeo copy docker://docker.io/nginx:latest docker://crpi-7u6rj2d0v1pd7q1t.cn-guangzhou.personal.cr.aliyuncs.com/wenjie97/nginx:latest
-         skopeo copy docker://docker.io/bitnami/kafka:latest docker://crpi-7u6rj2d0v1pd7q1t.cn-guangzhou.personal.cr.aliyuncs.com/wenjie97/kafka:latest
+         skopeo copy docker://docker.io/bitnami/etcd:latest docker://crpi-7u6rj2d0v1pd7q1t.cn-guangzhou.personal.cr.aliyuncs.com/wenjie97/etcd:latest
+         skopeo copy docker://docker.io/bitnami/mysql:latest docker://crpi-7u6rj2d0v1pd7q1t.cn-guangzhou.personal.cr.aliyuncs.com/wenjie97/mysql:latest
  
